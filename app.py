@@ -10,7 +10,7 @@ class PriceChecker:
         self.price = price
 
     def checkPrice(self):
-        headers = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"}
+        headers = {"User-Agent": "YOUR USER AGENT"}
 
         page = requests.get(self.url, headers=headers)
         soup = BeautifulSoup(page.content, 'lxml')
